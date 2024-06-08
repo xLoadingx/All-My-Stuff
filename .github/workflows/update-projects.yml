@@ -1,1 +1,36 @@
+name: Update Projects
 
+on:
+  push:
+    paths:
+      - 'projects/**.html'  # Trigger the workflow when any HTML file in the projects directory is added or modified
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate projects.html
+      run: node generate-projects.js
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add projects.html
+        git commit -m "Auto-update projects.html"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
