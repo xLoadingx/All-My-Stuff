@@ -4,7 +4,7 @@ A list of all my TurboWarp games that can't be run/published on Scratch due to c
 
 ## Introduction
 
-This repository contains a collection of my TurboWarp games. These games utilize blocks and features that are not compatible with the Scratch platform, making them exclusive to TurboWarp. Feel free to explore and enjoy these unique projects.
+This repository contains a collection of my TurboWarp games. These games utilize blocks and features that are not compatible with the Scratch platform, making them exclusive to TurboWarp. Feel free to explore and enjoy these projects.
 
 ## How to Play
 
