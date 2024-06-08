@@ -8,6 +8,9 @@ on:
 
 jobs:
   update-projects:
+    permissions:
+      contents: write  # Explicitly grant write permissions to the contents
+
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +30,7 @@ jobs:
 
     - name: Commit and push changes
       env:
-        ACTIONS_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
