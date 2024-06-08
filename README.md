@@ -1,3 +1,5 @@
+## Please use my [GitHub Page](https://xloadingx.github.io/All-My-Stuff/) instead
+
 # My Projects Repository
 
 Welcome to my GitHub repository! This is a collection of all my projects, including TurboWarp games, coding projects, 3D printing designs, robotics projects, and more (soon). Feel free to explore and enjoy these creations (once they are there).
