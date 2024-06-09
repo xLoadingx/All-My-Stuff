@@ -7,27 +7,35 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://github.com/xLoadingx">My GitHub Profile</a></li>
-        <li><a href="https://github.com/xLoadingx/All-My-Stuff">Original Repository</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Project Files</h2>
-      <ul>
-        <li><a href="./projects/Test.html">Test</a></li>
-
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 ERROR</p>
-  </footer>
+  <div class="container">
+    <header>
+      <h1>My Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://github.com/xLoadingx">My GitHub Profile</a></li>
+          <li><a href="https://github.com/xLoadingx/All-My-Stuff">Original Repository</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <aside class="sidebar">
+        <div class="sidebar__content">
+          <h2 class="sidebar__title">Introduction</h2>
+          <p>This repository is a showcase of my work across various fields including programming, 3D printing, robotics, and game development.</p>
+        </div>
+      </aside>
+      <section class="projects">
+        <h2>Project Files</h2>
+        <ul class="projects__list">
+          <li><a href="./projects/Test.html" class="projects__link">Test</a></li>
+          <!-- Add more project links as needed -->
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 ERROR</p>
+    </footer>
+  </div>
 </body>
 </html>
