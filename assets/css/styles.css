@@ -28,7 +28,7 @@ body {
   justify-content: center;
 }
 
-section {
+section#projects {
   padding: 40px;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.1); /* Glassy effect */
@@ -37,4 +37,25 @@ section {
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3); /* Subtle rainbow shadow effect */
   width: 80%;
   max-width: 800px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.project-button {
+  background-color: #5b4179; /* Light purple */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #4b3367; /* Darker purple on hover */
 }
