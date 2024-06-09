@@ -9,26 +9,30 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #2c2048; /* Dark purple */
+  color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Header Styles */
 header {
-  background-color: #1a1a1a;
+  background-color: #1a1133; /* Darker purple */
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  border-bottom: 2px solid #5b4179; /* Light purple border */
 }
 
 header h1 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
 }
 
+/* Navigation Styles */
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,8 +48,14 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+nav ul li a:hover {
+  color: #5b4179; /* Light purple on hover */
+}
+
+/* Main Content Styles */
 main {
   flex: 1;
   display: flex;
@@ -57,16 +67,22 @@ main {
 section {
   padding: 40px;
   margin: 20px;
-  background-color: #fff;
+  background-color: #5b4179; /* Light purple */
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced box shadow */
   width: 80%;
   max-width: 800px;
 }
 
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #1a1133; /* Darker purple */
+  border-top: 2px solid #5b4179; /* Light purple border */
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8; /* Reduced opacity for subtle effect */
 }
