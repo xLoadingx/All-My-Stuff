@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const PROJECTS_PATH = './projects.html';
 const PROJECTS_DIR = './projects';
@@ -183,6 +184,15 @@ const generateProjectsHTML = () => {
 </html>`;
 
   fs.writeFileSync(PROJECTS_PATH, htmlContent);
+
+  // Add changes to git staging area
+  execSync('git add projects.html');
+
+  // Commit changes
+  execSync('git commit -m "Update projects.html with generated content"');
+
+  // Push changes to remote repository
+  execSync('git push');
 };
 
 // Generate the projects.html file
