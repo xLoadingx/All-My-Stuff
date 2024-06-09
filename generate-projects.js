@@ -13,6 +13,11 @@ const generateProjectsList = () => {
 
   const files = fs.readdirSync(PROJECTS_DIR).filter(file => file.endsWith('.html'));
 
+  if (files.length === 0) {
+    console.warn(`No HTML files found in the directory ${PROJECTS_DIR}.`);
+    return '';
+  }
+
   let projectsList = '';
   files.forEach(file => {
     const projectName = path.basename(file, '.html');
@@ -188,7 +193,12 @@ const generateProjectsHTML = () => {
 </body>
 </html>`;
 
-  fs.writeFileSync(PROJECTS_PATH, htmlContent);
+  try {
+    fs.writeFileSync(PROJECTS_PATH, htmlContent);
+    console.log(`Successfully written to ${PROJECTS_PATH}`);
+  } catch (error) {
+    console.error(`Failed to write to ${PROJECTS_PATH}:`, error);
+  }
 };
 
 // Generate the projects.html file
