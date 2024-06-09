@@ -101,6 +101,13 @@
             max-width: 800px;
         }
 
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
         .link {
             color: white;
             text-decoration: none;
@@ -111,6 +118,9 @@
             display: inline-block;
             background: rgba(255, 105, 180, 0.4);
             transition: transform 0.3s ease, background 0.3s ease;
+            flex: 1 1 200px; /* Flexible item with a minimum width */
+            box-sizing: border-box;
+            text-align: center;
         }
 
         .link:hover {
@@ -136,9 +146,15 @@
         <!-- Content section -->
         <div class="content">
             <p>Welcome to my projects page! Here you'll find some of the cool things I've been working on.</p>
-            <a href="project1.html" class="link glass">Project 1</a>
-            <a href="project2.html" class="link glass">Project 2</a>
-            <a href="project3.html" class="link glass">Project 3</a>
+            <div class="projects-container">
+                <a href="project1.html" class="link glass">Project 1</a>
+                <a href="project2.html" class="link glass">Project 2</a>
+                <a href="project3.html" class="link glass">Project 3</a>
+                <a href="#" class="link glass">Project 4</a>
+                <a href="#" class="link glass">Project 5</a>
+                <a href="#" class="link glass">Project 6</a>
+                <!-- Add more project links as needed -->
+            </div>
         </div>
     </div>
 </body>
