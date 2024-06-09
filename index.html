@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blank Page with Gradient Background</title>
+    <title>Button Test</title>
     <style>
-        body {
-            /* Set background gradient */
-            background: linear-gradient(45deg, #e0c3fc, #8ec5fc);
-            /* Ensure full page coverage */
-            height: 100vh;
-            margin: 0;
-            /* Optional: Center content vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Button styles */
+        .button {
+            /* Background color with alpha (opacity) */
+            background: rgba(0, 17, 255, 0.21);
+            /* Rounded corners */
+            border-radius: 16px;
+            /* Drop shadow effect */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            /* Blur effect for backdrop */
+            backdrop-filter: blur(13.4px);
+            /* Additional blur effect for WebKit browsers */
+            -webkit-backdrop-filter: blur(13.4px);
+            /* Border with alpha (opacity) */
+            border: 1px solid rgba(0, 17, 255, 0.35);
+            /* Padding to create space inside the button */
+            padding: 10px 20px;
+            /* Optional: Text color */
+            color: white;
+            /* Optional: Text font and size */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            /* Optional: Remove default button styles */
+            border: none;
+            outline: none;
+            /* Optional: Cursor style */
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-
+    <!-- Button element with the specified class -->
+    <button class="button">Test</button>
 </body>
 </html>
