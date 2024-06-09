@@ -7,65 +7,45 @@
     <style>
         /* Gradient background */
         body {
-            /* Gradient background from light purple to dark purple */
             background: linear-gradient(45deg, #e0c3fc, #8ec5fc);
-            /* Optional: Remove default margin */
             margin: 0;
-            /* Optional: Center content vertically */
             display: flex;
             justify-content: center;
             align-items: center;
-            /* Optional: Ensure full page coverage */
             height: 100vh;
-        }
-
-        /* Button styles */
-        .button {
-            /* Optional: Text color */
-            color: white;
-            /* Optional: Text font and size */
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            /* Optional: Remove default button styles */
-            border: none;
-            outline: none;
-            /* Optional: Cursor style */
-            cursor: pointer;
-            /* Optional: Padding to create space inside the button */
-            padding: 10px 20px;
-            /* Background color with alpha (opacity) */
-            background: rgba(0, 17, 255, 0.21);
-            /* Rounded corners */
-            border-radius: 16px;
-            /* Drop shadow effect */
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            /* Blur effect for backdrop */
-            backdrop-filter: blur(13.4px);
-            /* Additional blur effect for WebKit browsers */
-            -webkit-backdrop-filter: blur(13.4px);
-            /* Border with alpha (opacity) */
-            border: 1px solid rgba(0, 17, 255, 0.35);
         }
 
         /* Glass effect */
         .glass {
-            /* Background color with alpha (opacity) */
             background: rgba(0, 17, 255, 0.21);
-            /* Rounded corners */
             border-radius: 16px;
-            /* Drop shadow effect */
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            /* Blur effect for backdrop */
             backdrop-filter: blur(13.4px);
-            /* Additional blur effect for WebKit browsers */
             -webkit-backdrop-filter: blur(13.4px);
-            /* Border with alpha (opacity) */
             border: 1px solid rgba(0, 17, 255, 0.35);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        /* Button styles */
+        .button {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        /* Hover effect */
+        .button.glass:hover {
+            transform: scale(1.5);
+            background: rgba(0, 17, 255, 0.4);
         }
     </style>
 </head>
-<body class="glass">
+<body>
     <!-- Button element with both button and glass classes -->
-    <button class="button">Test</button>
+    <button class="button glass">Test</button>
 </body>
 </html>
