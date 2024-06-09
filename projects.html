@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Projects</title>
+    <title>Projects</title>
     <style>
         /* Gradient background */
         body {
-            background: linear-gradient(45deg, #e0c3fc, #8ec5fc);
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             margin: 0;
             display: flex;
             flex-direction: column;
@@ -20,7 +20,7 @@
         /* Navigation bar styles */
         .navbar {
             width: 100%;
-            background: rgba(0, 17, 255, 0.21);
+            background: rgba(255, 105, 180, 0.21);
             display: flex;
             justify-content: center;
             padding: 10px;
@@ -42,18 +42,18 @@
 
         .navbar a:hover {
             transform: scale(1.05);
-            background: rgba(0, 17, 255, 0.4);
+            background: rgba(255, 105, 180, 0.4);
             border-radius: 8px;
         }
 
         /* Glass effect */
         .glass {
-            background: rgba(0, 17, 255, 0.21);
+            background: rgba(255, 105, 180, 0.21);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(13.4px);
             -webkit-backdrop-filter: blur(13.4px);
-            border: 1px solid rgba(0, 17, 255, 0.35);
+            border: 1px solid rgba(255, 105, 180, 0.35);
             transition: transform 0.3s ease, background 0.3s ease;
         }
 
@@ -100,6 +100,23 @@
             background: rgba(255, 105, 180, 0.6);
         }
 
+        .back-button {
+            color: white;
+            text-decoration: none;
+            border: 1px solid rgba(255, 105, 180, 0.35);
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            background: rgba(255, 105, 180, 0.4);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: scale(1.05);
+            background: rgba(255, 105, 180, 0.6);
+        }
+
     </style>
 </head>
 <body>
@@ -112,16 +129,16 @@
     </div>
 
     <!-- Header element with the specified class -->
-    <div class="header">Welcome to my Projects</div>
+    <div class="header">My Projects</div>
 
     <!-- Content section -->
     <div class="content">
-        <h2>Introduction</h2>
-        <p>This repository is a showcase of my work across various fields including programming, 3D printing, robotics, and game development.</p>
-        <h2>Projects</h2>
-        <p>Details about projects will go here.</p>
-        <h2>GitHub Profile</h2>
-        <p>Details about the GitHub profile will go here.</p>
+        <p>Welcome to my projects page! Here you'll find some of the cool things I've been working on.</p>
+        <a href="project1.html" class="link glass">Project 1</a>
+        <a href="project2.html" class="link glass">Project 2</a>
+        <a href="project3.html" class="link glass">Project 3</a>
+        <br>
+        <a href="index.html" class="back-button">Back to Main</a>
     </div>
 </body>
 </html>
