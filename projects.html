@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* Gradient background */
+        body {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            font-size: calc(1rem + 0.5vw); /* Responsive font size */
+        }
+
+        /* Glass effect */
+        .glass {
+            background: rgba(255, 105, 180, 0.21);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(13.4px);
+            -webkit-backdrop-filter: blur(13.4px);
+            border: 1px solid rgba(255, 105, 180, 0.35);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        /* Header styles */
+        .header {
+            font-family: Arial, sans-serif;
+            font-size: 3em; /* Responsive font size */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            -webkit-text-stroke: 1px black;
+            margin-top: 2vh; /* Add margin to the top */
+        }
+
+        /* Content styles */
+        .content {
+            font-family: Arial, sans-serif;
+            font-size: 1.5em; /* Responsive font size */
+            color: white;
+            margin: 20px;
+            text-align: center;
+            background: rgba(255, 105, 180, 0.21);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(13.4px);
+            -webkit-backdrop-filter: blur(13.4px);
+            border: 1px solid rgba(255, 105, 180, 0.35);
+            padding: 20px;
+        }
+
+        .link {
+            color: white;
+            text-decoration: none;
+            border: 1px solid rgba(255, 105, 180, 0.35);
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            background: rgba(255, 105, 180, 0.4);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .link:hover {
+            transform: scale(1.05);
+            background: rgba(255, 105, 180, 0.6);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header element with the specified class -->
+    <div class="header">My Projects</div>
+
+    <!-- Content section -->
+    <div class="content">
+        <p>Welcome to my projects page! Here you'll find some of the cool things I've been working on.</p>
+        <a href="project1.html" class="link glass">Project 1</a>
+        <a href="project2.html" class="link glass">Project 2</a>
+        <a href="project3.html" class="link glass">Project 3</a>
+    </div>
+</body>
+</html>
