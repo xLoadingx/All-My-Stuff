@@ -17,15 +17,16 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #1a1a1a;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
   padding: 0;
+  font-size: 24px;
 }
 
 nav ul {
@@ -36,12 +37,13 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
 }
 
 main {
@@ -53,20 +55,18 @@ main {
 }
 
 section {
-  padding: 20px;
+  padding: 40px;
   margin: 20px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px;
 }
 
 footer {
   text-align: center;
-  padding: 10px 0;
-  background-color: #333;
+  padding: 20px 0;
+  background-color: #1a1a1a;
   color: #fff;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }
