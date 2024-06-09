@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Test</title>
+    <title>Glass Button Test</title>
     <style>
+        /* Glass effect */
+        .glass {
+            /* Blur effect for backdrop */
+            backdrop-filter: blur(13.4px);
+            /* Additional blur effect for WebKit browsers */
+            -webkit-backdrop-filter: blur(13.4px);
+        }
+
         /* Button styles */
         .button {
             /* Background color with alpha (opacity) */
@@ -13,10 +21,6 @@
             border-radius: 16px;
             /* Drop shadow effect */
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            /* Blur effect for backdrop */
-            backdrop-filter: blur(13.4px);
-            /* Additional blur effect for WebKit browsers */
-            -webkit-backdrop-filter: blur(13.4px);
             /* Border with alpha (opacity) */
             border: 1px solid rgba(0, 17, 255, 0.35);
             /* Padding to create space inside the button */
@@ -35,7 +39,7 @@
     </style>
 </head>
 <body>
-    <!-- Button element with the specified class -->
-    <button class="button">Test</button>
+    <!-- Button element with both button and glass classes -->
+    <button class="button glass">Test</button>
 </body>
 </html>
