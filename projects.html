@@ -17,35 +17,6 @@
             font-size: calc(1rem + 0.5vw); /* Responsive font size */
         }
 
-        /* Navigation bar styles */
-        .navbar {
-            width: 100%;
-            background: rgba(255, 105, 180, 0.21);
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            border-radius: 0 0 16px 16px;
-        }
-
-        .navbar a {
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 1.5em;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-
-        .navbar a:hover {
-            transform: scale(1.05);
-            background: rgba(255, 105, 180, 0.4);
-            border-radius: 8px;
-        }
-
         /* Glass effect */
         .glass {
             background: rgba(255, 105, 180, 0.21);
@@ -57,6 +28,41 @@
             transition: transform 0.3s ease, background 0.3s ease;
         }
 
+        /* Sidebar styles */
+        .sidebar {
+            position: absolute;
+            top: 1vh;
+            bottom: 1vh;
+            left: 1vh;
+            width: 15vw; /* Responsive width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1vh;
+        }
+
+        .sidebar a {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em; /* Responsive font size */
+            border: 1px solid rgba(255, 105, 180, 0.35);
+            outline: none;
+            cursor: pointer;
+            padding: 1em 1.5em; /* Responsive padding */
+            width: calc(100% - 2em);
+            margin: 0.5em 0;
+            border-radius: 8px;
+            box-sizing: border-box; /* Ensures padding is included in width calculation */
+            text-align: center;
+            text-decoration: none; /* Removes underline from links */
+            display: inline-block;
+        }
+
+        .sidebar a:hover {
+            transform: scale(1.05);
+            background: rgba(255, 105, 180, 0.4);
+        }
+
         /* Header styles */
         .header {
             font-family: Arial, sans-serif;
@@ -64,7 +70,7 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             -webkit-text-stroke: 1px black;
-            margin-top: 10vh; /* Adjusted to account for fixed navbar */
+            margin-top: 10vh; /* Adjusted to account for fixed sidebar */
         }
 
         /* Content styles */
@@ -100,32 +106,15 @@
             background: rgba(255, 105, 180, 0.6);
         }
 
-        .back-button {
-            color: white;
-            text-decoration: none;
-            border: 1px solid rgba(255, 105, 180, 0.35);
-            border-radius: 8px;
-            padding: 10px 20px;
-            margin: 10px 0;
-            display: inline-block;
-            background: rgba(255, 105, 180, 0.4);
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-
-        .back-button:hover {
-            transform: scale(1.05);
-            background: rgba(255, 105, 180, 0.6);
-        }
-
     </style>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://github.com/xLoadingx">GitHub Profile</a>
-        <a href="https://github.com/xLoadingx/All-My-Stuff">Original Repo</a>
+    <!-- Sidebar element with glass effect -->
+    <div class="sidebar glass">
+        <a href="index.html" class="glass">Home</a>
+        <a href="projects.html" class="glass">Projects</a>
+        <a href="https://github.com/xLoadingx" class="glass">GitHub Profile</a>
+        <a href="https://github.com/xLoadingx/All-My-Stuff" class="glass">Original Repo</a>
     </div>
 
     <!-- Header element with the specified class -->
@@ -137,8 +126,6 @@
         <a href="project1.html" class="link glass">Project 1</a>
         <a href="project2.html" class="link glass">Project 2</a>
         <a href="project3.html" class="link glass">Project 3</a>
-        <br>
-        <a href="index.html" class="back-button">Back to Main</a>
     </div>
 </body>
 </html>
