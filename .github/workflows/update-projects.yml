@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Generate index.html
+    - name: Generate projects.html
       run: node generate-projects.js
 
     - name: Commit and push changes
