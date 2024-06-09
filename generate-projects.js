@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROJECTS_PATH = './projects.html';
+const PROJECTS_PATH = './index.html';
 const PROJECTS_DIR = './projects';
 
 // Function to generate the projects list
