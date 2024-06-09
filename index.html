@@ -14,6 +14,7 @@
             justify-content: flex-start;
             align-items: center;
             height: 100vh;
+            font-size: calc(1rem + 0.5vw); /* Responsive font size */
         }
 
         /* Glass effect */
@@ -31,13 +32,13 @@
         .button {
             color: white;
             font-family: Arial, sans-serif;
-            font-size: 16px;
+            font-size: 1em; /* Responsive font size */
             border: 1px solid rgba(0, 17, 255, 0.35);
             outline: none;
             cursor: pointer;
-            padding: 15px 20px;
-            width: calc(100% - 20px);
-            margin: 10px 0;
+            padding: 1em 1.5em; /* Responsive padding */
+            width: calc(100% - 2em);
+            margin: 0.5em 0;
             border-radius: 8px;
             box-sizing: border-box; /* Ensures padding is included in width calculation */
             text-align: center;
@@ -54,24 +55,24 @@
         /* Header styles */
         .header {
             font-family: Arial, sans-serif;
-            font-size: 48px;
+            font-size: 3em; /* Responsive font size */
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             -webkit-text-stroke: 1px black;
-            margin-top: 20px; /* Add margin to the top */
+            margin-top: 2vh; /* Add margin to the top */
         }
 
         /* Sidebar styles */
         .sidebar {
             position: absolute;
-            top: 10px;
-            bottom: 10px;
-            left: 10px;
-            width: 200px;
+            top: 1vh;
+            bottom: 1vh;
+            left: 1vh;
+            width: 15vw; /* Responsive width */
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding: 1vh;
         }
 
     </style>
