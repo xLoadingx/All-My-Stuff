@@ -4,6 +4,8 @@ const { execSync } = require('child_process');
 
 const PROJECTS_PATH = './projects.html';
 const PROJECTS_DIR = './projects';
+const GIT_USER_NAME = 'Your Name';
+const GIT_USER_EMAIL = 'you@example.com';
 
 // Function to generate the projects list
 const generateProjectsList = () => {
@@ -184,6 +186,10 @@ const generateProjectsHTML = () => {
 </html>`;
 
   fs.writeFileSync(PROJECTS_PATH, htmlContent);
+
+  // Set Git user configuration
+  execSync(`git config --global user.name "${GIT_USER_NAME}"`);
+  execSync(`git config --global user.email "${GIT_USER_EMAIL}"`);
 
   // Add changes to git staging area
   execSync('git add projects.html');
